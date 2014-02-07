@@ -98,7 +98,7 @@
         <executions>
           <execution>
             <!-- Run wsprovide to create the wsdl for the endpoint to be used later -->
-            <!-- This also create the request/response wrapper classes that are also included in the deployement (actually optional w/ JBossWS) -->
+            <!-- This also creates the request/response wrapper classes that are also included in the deployement (actually optional w/ JBossWS) -->
             <id>wsprovide execution</id>
             <goals>
               <goal>wsprovide</goal>
@@ -181,7 +181,7 @@
   </build>
   
   <profiles>
-    <!-- A profile for avoid meaningless Eclipse warnings / errors (see https://issues.jboss.org/browse/JBWS-3666) -->
+    <!-- A profile to avoid meaningless Eclipse warnings / errors (see https://issues.jboss.org/browse/JBWS-3666) -->
     <profile>
       <id>eclipse-m2e</id>
       <activation>
