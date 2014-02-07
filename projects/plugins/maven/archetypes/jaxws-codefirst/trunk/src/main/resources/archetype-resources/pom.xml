@@ -45,6 +45,12 @@
       <url>http://repository.jboss.org/nexus/content/groups/public</url>
     </repository>
   </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>JBOSS_NEXUS</id>
+      <url>http://repository.jboss.org/nexus/content/groups/public</url>
+    </pluginRepository>
+  </pluginRepositories>
   <build>
     <testResources>
       <!-- Copy the Log4J configuration in the test classpath -->
@@ -85,7 +91,7 @@
       <plugin>
         <groupId>org.jboss.ws.plugins</groupId>
         <artifactId>maven-jaxws-tools-plugin</artifactId>
-        <version>1.1.1.Final</version>
+        <version>1.1.2.Final</version>
         <configuration>
           <verbose>true</verbose>
         </configuration>
