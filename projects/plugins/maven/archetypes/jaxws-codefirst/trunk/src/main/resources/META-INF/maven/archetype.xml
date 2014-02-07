@@ -1,5 +1,5 @@
 <archetype>
-  <id>jaxws-codefirst</id>
+  <id>$artifactId</id>
   <sources>
       <source>src/main/java/HelloWorld.java</source>
       <source>src/main/java/HelloWorldImpl.java</source>

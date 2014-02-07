@@ -2,19 +2,23 @@ package ${package};
 
 import java.net.URL;
 
-import javax.xml.namespace.QName;
-import javax.xml.ws.Service;
-
 import org.junit.Assert;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+
+import client.HelloWorld;
+import client.HelloWorldService;
+import client.Person;
 
 public class HelloWorldIntegrationTest {
 
     @Test
-    public void testSayHi() throws Exception {
-        Service service = Service.create(new URL("http://localhost:8080/jaxws-codefirst/HelloWorldService?wsdl"), new QName("http://hello.world.ns/", "HelloWorldService"));
-        HelloWorld port = service.getPort(new QName("http://hello.world.ns/", "HelloWorldPort"), HelloWorld.class);
+    public void testHelloWorld() throws Exception {
+    	HelloWorldService service = new HelloWorldService(new URL("http://localhost:8080/\${artifactId}/HelloWorldService?wsdl"));
+    	HelloWorld port = service.getHelloWorldPort();
         Assert.assertEquals("Hello John", port.sayHi("John"));
+        Person p = new Person();
+        p.setName("Anne");
+        p.setSurname("Li");
+        Assert.assertEquals("Greetings Anne Li", port.greetings(p));
     }
 }
