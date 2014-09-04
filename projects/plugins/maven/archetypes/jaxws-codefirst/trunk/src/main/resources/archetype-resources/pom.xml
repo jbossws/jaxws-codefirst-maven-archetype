@@ -74,6 +74,13 @@
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.4.3</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
       <!-- The plugin for WildFly deploy / undeploy -->
       <plugin>
         <groupId>org.wildfly.plugins</groupId>
@@ -115,8 +122,6 @@
               <goal>wsconsume-test</goal>
             </goals>
             <configuration>
-              <fork>true</fork> <!-- Fork mode to specify the log conf sys prop below -->
-              <argLine>-Dlog4j.output.dir=\${project.build.directory}</argLine>
               <wsdls>
                 <wsdl>\${project.build.directory}/wsprovide/resources/HelloWorldService.wsdl</wsdl>
               </wsdls>
