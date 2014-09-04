@@ -19,7 +19,7 @@
 
   <!-- A time/date based rolling appender -->
   <appender name="FILE" class="org.apache.log4j.RollingFileAppender">
-    <param name="File" value="${log4j.output.dir}/test.log"/>
+    <param name="File" value="${project.build.directory}/test.log"/>
     <param name="MaxFileSize" value="10MB"/>
     <param name="Append" value="true"/>
 
