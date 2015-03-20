@@ -9,7 +9,7 @@
   </parent>
   <groupId>org.jboss.ws.plugins.archetypes</groupId>
   <artifactId>jaxws-codefirst</artifactId>
-  <version>1.1.0-SNAPSHOT</version>
+  <version>1.1.0.Beta1</version>
   <packaging>maven-archetype</packaging>
 
   <name>JBossWS-CXF Archetype - Simple JAX-WS Code First</name>
@@ -17,9 +17,9 @@
 
   <!-- Source Control Management -->
   <scm>
-    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossws/projects/plugins/maven/archetypes/jaxws-codefirst/trunk</connection>
-    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossws/projects/plugins/maven/archetypes/jaxws-codefirst/trunk</developerConnection>
-    <url>http://fisheye.jboss.com/viewrep/JBossWS/projects/plugins/maven/archetypes/jaxws-codefirst/trunk</url>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossws/projects/plugins/maven/archetypes/jaxws-codefirst/tags/jaxws-codefirst-1.1.0.Beta1</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossws/projects/plugins/maven/archetypes/jaxws-codefirst/tags/jaxws-codefirst-1.1.0.Beta1</developerConnection>
+    <url>http://fisheye.jboss.com/viewrep/JBossWS/projects/plugins/maven/archetypes/jaxws-codefirst/tags/jaxws-codefirst-1.1.0.Beta1</url>
   </scm>
 
   <build>
