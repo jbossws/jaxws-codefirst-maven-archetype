@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.jboss.ws</groupId>
     <artifactId>jbossws-parent</artifactId>
-    <version>1.1.0.GA</version>
+    <version>1.2.0.CR1</version>
   </parent>
   <groupId>org.jboss.ws.plugins.archetypes</groupId>
   <artifactId>jaxws-codefirst</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>JBossWS-CXF Archetype - Simple JAX-WS Code First</name>
