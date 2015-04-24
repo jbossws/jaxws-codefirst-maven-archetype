@@ -9,7 +9,7 @@
   </parent>
   <groupId>org.jboss.ws.plugins.archetypes</groupId>
   <artifactId>jaxws-codefirst</artifactId>
-  <version>1.1.0.Final</version>
+  <version>1.1.1-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>JBossWS-CXF Archetype - Simple JAX-WS Code First</name>
