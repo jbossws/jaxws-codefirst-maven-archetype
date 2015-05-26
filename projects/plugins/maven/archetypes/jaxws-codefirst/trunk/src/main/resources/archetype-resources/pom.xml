@@ -130,6 +130,8 @@
               </wsdls>
               <targetPackage>client</targetPackage>
               <outputDirectory>\${project.build.directory}/wsconsume</outputDirectory>
+              <fork>true</fork>
+              <argLine>-Djavax.xml.accessExternalSchema=file,http</argLine>
             </configuration>
           </execution>
         </executions>
